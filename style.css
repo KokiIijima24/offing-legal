@@ -1,0 +1,143 @@
+/*
+ * おきなぎログ (OFFING) 法的文書 共通スタイル
+ * トーン: 静けさ・余白・最小限。アプリの design/tokens.ts と色味を揃える。
+ */
+
+:root {
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  --text: #0f172a;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --border: #e2e8f0;
+  --accent: #2563eb;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP",
+    "Segoe UI", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+header.brand {
+  text-align: center;
+  padding: 56px 24px 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.wordmark {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  margin: 0;
+}
+
+.wordmark-sub {
+  color: var(--text-secondary);
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  margin: 0 0 8px;
+}
+
+.updated {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin: 0 0 40px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 40px 0 12px;
+}
+
+p,
+li {
+  color: var(--text);
+}
+
+.lead {
+  color: var(--text-secondary);
+}
+
+ul,
+ol {
+  padding-left: 1.4em;
+}
+
+li {
+  margin: 6px 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.toc {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 64px auto;
+  max-width: var(--max-width);
+}
+
+.toc h2 {
+  margin-top: 0;
+}
+
+.toc a {
+  display: block;
+  padding: 8px 0;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+
+.toc a:last-child {
+  border-bottom: none;
+}
+
+footer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 32px 24px 64px;
+  border-top: 1px solid var(--border);
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
